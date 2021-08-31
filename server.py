@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 
 app = Flask(__name__)
-
+ASSETS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/')
 def index():
